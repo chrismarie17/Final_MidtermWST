@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Add to Cart App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>𝓞𝓷𝓵𝓲𝓷𝓮 𝓢𝓱𝓸𝓹</h1>
+
+        <div class="add-product">
+            <input type="text" id="product-name" placeholder="Enter product name">
+            <input type="number" id="product-price" placeholder="Enter product price" min="0" step="0.01">
+            <input type="number" id="product-quantity" placeholder="Enter quantity" min="0" step="0.01">
+            <button id="add-product">Add Product</button>
+        </div>
+
+        <h2>Your Cart</h2>
+        <div class="cart-container">
+            <ul id="cart"></ul>
+
+            <div class="shipping-info">
+                <label for="shipping-destination">Shipping Destination:</label>
+                <select id="shipping-destination">
+                    <option value="shipping-destination">Shipping Destination</option>
+                    <option value="local">Local - $1</option>
+                    <option value="national">National - $2</option>
+                    <option value="international">International - $3</option>
+                </select>
+            </div>
+            <p id="shipping-fee">Shipping Fee: 0</p>
+            <p id="total-price">Total: $0</p>
+
+
+            <button id="checkout" style="display: none;">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
